@@ -1,0 +1,43 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "lAL8JBKEv4VLRKc5I5Y3kooRuuE=",
+			"path": "github.com/cjtoolkit/cli",
+			"revision": "5f5f00c3d0176656b275768dbbb7cab56ea384a7",
+			"revisionTime": "2016-06-02T18:22:59Z"
+		},
+		{
+			"checksumSHA1": "uZHCEFeqIyI907+JSngVZBGqhyo=",
+			"path": "github.com/cjtoolkit/cli/arguments",
+			"revision": "5f5f00c3d0176656b275768dbbb7cab56ea384a7",
+			"revisionTime": "2016-06-02T18:22:59Z"
+		},
+		{
+			"checksumSHA1": "kyadRT/+AAZ4LyE+cFLO11P8WhU=",
+			"path": "github.com/cjtoolkit/cli/help",
+			"revision": "5f5f00c3d0176656b275768dbbb7cab56ea384a7",
+			"revisionTime": "2016-06-02T18:22:59Z"
+		},
+		{
+			"checksumSHA1": "w37D0xOD4d5Yd9ePnx/xRcPjaUw=",
+			"path": "github.com/cjtoolkit/cli/options",
+			"revision": "5f5f00c3d0176656b275768dbbb7cab56ea384a7",
+			"revisionTime": "2016-06-02T18:22:59Z"
+		},
+		{
+			"checksumSHA1": "Y3U6on66N0BszKXYvb2Q+qpG6f4=",
+			"path": "github.com/julienschmidt/httprouter",
+			"revision": "5dd70ee059943e81987a817fa1a755b11dd119c1",
+			"revisionTime": "2016-12-03T08:33:52Z"
+		},
+		{
+			"checksumSHA1": "7EZyXN0EmZLgGxZxK01IJua4c8o=",
+			"path": "golang.org/x/net/websocket",
+			"revision": "cfae461cedfdcab6e261a26eb77db53695623303",
+			"revisionTime": "2016-12-13T01:09:39Z"
+		}
+	],
+	"rootPath": "github.com/CJ-Jackson/socky"
+}
