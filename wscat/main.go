@@ -12,6 +12,7 @@ func main() {
 	if nil != err {
 		log.Panic(err)
 	}
+	defer ws.Close()
 
 	go io.Copy(os.Stdout, ws)
 	io.Copy(ws, os.Stdin)

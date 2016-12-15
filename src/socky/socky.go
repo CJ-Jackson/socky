@@ -25,6 +25,7 @@ func getSocket(protocol, address string) websocket.Handler {
 		if nil != err {
 			log.Panic(err)
 		}
+		defer out.Close()
 
 		go io.Copy(in, out)
 		io.Copy(out, in)
