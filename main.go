@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	_ "github.com/CJ-Jackson/socky/src"
 	"github.com/cjtoolkit/cli"
 )

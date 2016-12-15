@@ -2,13 +2,14 @@ package socky
 
 import (
 	"fmt"
-	"github.com/julienschmidt/httprouter"
-	"golang.org/x/net/websocket"
 	"io"
+	"log"
 	"net"
 	"net/http"
 	"strings"
-	"log"
+
+	"github.com/julienschmidt/httprouter"
+	"golang.org/x/net/websocket"
 )
 
 func reformat(str string) string {

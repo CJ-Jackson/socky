@@ -2,11 +2,12 @@ package socky
 
 import (
 	"fmt"
+	"net/http"
+
 	"github.com/CJ-Jackson/socky/src/config"
 	"github.com/cjtoolkit/cli"
 	"github.com/cjtoolkit/cli/options"
 	"github.com/julienschmidt/httprouter"
-	"net/http"
 )
 
 type sockyHttpCommand struct {
