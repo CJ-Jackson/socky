@@ -1,9 +1,9 @@
 package config
 
 import (
-	"os"
 	"encoding/json"
 	"log"
+	"os"
 )
 
 type Config struct {
@@ -18,7 +18,7 @@ type SocketValue struct {
 
 type SocketList []SocketValue
 
-const filePath = "~/.socky/config.json"
+const filePath = "~/.config/socky/config.json"
 
 func GetConfig() Config {
 	configVar := Config{}
