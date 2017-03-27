@@ -19,7 +19,8 @@ func getPortForwardClosure(value config.SocketValue) func() {
 		for {
 			conn, err := listener.Accept()
 			if err != nil {
-				log.Fatal(err)
+				log.Println(err)
+				continue
 			}
 			go doPortForward(value, conn)
 		}
@@ -32,7 +33,9 @@ func doPortForward(value config.SocketValue, conn net.Conn) {
 	ws, err := websocket.Dial(value.OriginUrl, value.OriginProtocol, value.OriginOrigin)
 	if nil != err {
 		log.Println(err)
+		return
 	}
+	defer ws.Close()
 
 	go io.Copy(conn, ws)
 	io.Copy(ws, conn)
