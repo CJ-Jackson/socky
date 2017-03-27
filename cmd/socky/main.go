@@ -1,4 +1,4 @@
-package socky
+package main
 
 import (
 	"fmt"
