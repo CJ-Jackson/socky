@@ -1,9 +1,9 @@
-package main
+package socky
 
 import (
 	"fmt"
 
-	_ "github.com/CJ-Jackson/socky/src"
+	_ "github.com/CJ-Jackson/socky/cmd/socky/internal"
 	"github.com/cjtoolkit/cli"
 )
 

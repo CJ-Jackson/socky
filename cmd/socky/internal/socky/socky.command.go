@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/CJ-Jackson/socky/src/config"
+	"github.com/CJ-Jackson/socky/cmd/socky/internal/config"
 	"github.com/cjtoolkit/cli"
 	"github.com/cjtoolkit/cli/options"
 	"github.com/julienschmidt/httprouter"
