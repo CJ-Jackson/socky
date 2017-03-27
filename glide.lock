@@ -1,11 +1,6 @@
-hash: b32f9895615ad1f98cdbecad0a0eedfbaf8d7ec96d28646a4e61800cbc819ff7
-updated: 2017-01-20T19:15:24.082659511Z
+hash: 36006c6cfbd959a949155d51a0babc6c78411c9cc65c621c36486b61eeca68a5
+updated: 2017-03-27T19:04:21.3112431+01:00
 imports:
-- name: github.com/cjtoolkit/cli
-  version: 5f5f00c3d0176656b275768dbbb7cab56ea384a7
-  subpackages:
-  - help
-  - options
 - name: github.com/julienschmidt/httprouter
   version: 8c199fb6259ffc1af525cc3ad52ee60ba8359669
 - name: golang.org/x/net

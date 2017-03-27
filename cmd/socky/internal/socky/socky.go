@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/CJ-Jackson/socky/cmd/socky/internal/config"
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/websocket"
 )
@@ -42,4 +43,15 @@ func getSockyHttp(protocol, address string) httprouter.Handle {
 
 		fmt.Fprintln(res, "Hello World")
 	}
+}
+
+func Start(address string) {
+	for _, data := range config.GetConfig().SocketList {
+		muxer.GET(data.Path, getSockyHttp(data.Protocol, data.Address))
+	}
+
+	fmt.Printf("Running Socky Server on '%s' (Ctrl + C to exit)...", address)
+	fmt.Println()
+
+	http.ListenAndServe(address, muxer)
 }
