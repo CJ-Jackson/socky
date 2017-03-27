@@ -11,14 +11,16 @@ type Config struct {
 }
 
 type SocketValue struct {
-	Path     string
-	Protocol string
-	Address  string
+	OriginUrl      string
+	OriginProtocol string
+	OriginOrigin   string
+	ListenType     string
+	ListenAddress  string
 }
 
 type SocketList []SocketValue
 
-const filePath = "~/.config/socky/config.json"
+const filePath = "~/.config/socky-reverse/config.json"
 
 func GetConfig() Config {
 	file, err := os.Open(os.Getenv("HOME") + filePath[1:])
